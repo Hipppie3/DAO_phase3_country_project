@@ -1,0 +1,252 @@
+[
+  {
+    "country": "China",
+    "population": 1425887337,
+    "density": "146.8933"
+  },
+  {
+    "country": "India",
+    "population": 1417173173,
+    "density": "431.0675"
+  },
+  {
+    "country": "Indonesia",
+    "population": 275501339,
+    "density": "144.6529"
+  },
+  {
+    "country": "Pakistan",
+    "population": 235824862,
+    "density": "267.4018"
+  },
+  {
+    "country": "Bangladesh",
+    "population": 171186372,
+    "density": "1160.0350"
+  },
+  {
+    "country": "Japan",
+    "population": 123951692,
+    "density": "327.9753"
+  },
+  {
+    "country": "Philippines",
+    "population": 115559009,
+    "density": "337.5434"
+  },
+  {
+    "country": "Vietnam",
+    "population": 98186856,
+    "density": "296.4472"
+  },
+  {
+    "country": "Iran",
+    "population": 88550570,
+    "density": "53.7258"
+  },
+  {
+    "country": "Turkey",
+    "population": 85341241,
+    "density": "108.9145"
+  },
+  {
+    "country": "Thailand",
+    "population": 71697030,
+    "density": "139.7276"
+  },
+  {
+    "country": "Myanmar",
+    "population": 54179306,
+    "density": "80.0784"
+  },
+  {
+    "country": "South Korea",
+    "population": 51815810,
+    "density": "517.0722"
+  },
+  {
+    "country": "Iraq",
+    "population": 44496122,
+    "density": "101.5158"
+  },
+  {
+    "country": "Afghanistan",
+    "population": 41128771,
+    "density": "63.0587"
+  },
+  {
+    "country": "Saudi Arabia",
+    "population": 36408820,
+    "density": "16.9368"
+  },
+  {
+    "country": "Uzbekistan",
+    "population": 34627652,
+    "density": "77.3975"
+  },
+  {
+    "country": "Malaysia",
+    "population": 33938221,
+    "density": "102.5934"
+  },
+  {
+    "country": "Yemen",
+    "population": 33696614,
+    "density": "63.8232"
+  },
+  {
+    "country": "Nepal",
+    "population": 30547580,
+    "density": "207.5511"
+  },
+  {
+    "country": "North Korea",
+    "population": 26069416,
+    "density": "216.2755"
+  },
+  {
+    "country": "Taiwan",
+    "population": 23893394,
+    "density": "660.1662"
+  },
+  {
+    "country": "Syria",
+    "population": 22125249,
+    "density": "119.4797"
+  },
+  {
+    "country": "Sri Lanka",
+    "population": 21832143,
+    "density": "332.7563"
+  },
+  {
+    "country": "Kazakhstan",
+    "population": 19397998,
+    "density": "7.1188"
+  },
+  {
+    "country": "Cambodia",
+    "population": 16767842,
+    "density": "92.6221"
+  },
+  {
+    "country": "Jordan",
+    "population": 11285869,
+    "density": "126.3221"
+  },
+  {
+    "country": "Azerbaijan",
+    "population": 10358074,
+    "density": "119.6082"
+  },
+  {
+    "country": "Tajikistan",
+    "population": 9952787,
+    "density": "69.5513"
+  },
+  {
+    "country": "United Arab Emirates",
+    "population": 9441129,
+    "density": "112.9322"
+  },
+  {
+    "country": "Israel",
+    "population": 9038309,
+    "density": "435.1617"
+  },
+  {
+    "country": "Laos",
+    "population": 7529475,
+    "density": "31.7968"
+  },
+  {
+    "country": "Hong Kong",
+    "population": 7488865,
+    "density": "6783.3922"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "population": 6630623,
+    "density": "33.1612"
+  },
+  {
+    "country": "Turkmenistan",
+    "population": 6430770,
+    "density": "13.1751"
+  },
+  {
+    "country": "Singapore",
+    "population": 5975689,
+    "density": "8416.4634"
+  },
+  {
+    "country": "Lebanon",
+    "population": 5489739,
+    "density": "525.2334"
+  },
+  {
+    "country": "Palestine",
+    "population": 5250072,
+    "density": "844.0630"
+  },
+  {
+    "country": "Oman",
+    "population": 4576298,
+    "density": "14.7861"
+  },
+  {
+    "country": "Kuwait",
+    "population": 4268873,
+    "density": "239.5821"
+  },
+  {
+    "country": "Georgia",
+    "population": 3744385,
+    "density": "53.7214"
+  },
+  {
+    "country": "Mongolia",
+    "population": 3398366,
+    "density": "2.1727"
+  },
+  {
+    "country": "Armenia",
+    "population": 2780469,
+    "density": "93.4831"
+  },
+  {
+    "country": "Qatar",
+    "population": 2695122,
+    "density": "232.6189"
+  },
+  {
+    "country": "Bahrain",
+    "population": 1472233,
+    "density": "1924.4876"
+  },
+  {
+    "country": "Timor-Leste",
+    "population": 1341296,
+    "density": "90.1772"
+  },
+  {
+    "country": "Bhutan",
+    "population": 782455,
+    "density": "20.3796"
+  },
+  {
+    "country": "Macau",
+    "population": 695168,
+    "density": "21129.7264"
+  },
+  {
+    "country": "Maldives",
+    "population": 523787,
+    "density": "1745.9567"
+  },
+  {
+    "country": "Brunei",
+    "population": 449002,
+    "density": "77.8841"
+  }
+]

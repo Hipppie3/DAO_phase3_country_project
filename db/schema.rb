@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2022_11_15_175325) do
 
   create_table "countries", force: :cascade do |t|
     t.string "name"
+    t.integer "population"
   end
 
   create_table "foods", force: :cascade do |t|
