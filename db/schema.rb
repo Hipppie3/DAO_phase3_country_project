@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2022_11_15_175325) do
   create_table "attractions", force: :cascade do |t|
     t.string "name"
     t.string "location"
+    t.string "description"
   end
 
   create_table "countries", force: :cascade do |t|

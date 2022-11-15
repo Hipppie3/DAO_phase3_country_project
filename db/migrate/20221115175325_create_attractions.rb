@@ -3,6 +3,7 @@ class CreateAttractions < ActiveRecord::Migration[6.1]
     create_table :attractions do |t|
     t.string :name
     t.string :location
+    t.string :description
   end
   end
 end
