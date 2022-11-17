@@ -50,3 +50,7 @@ maldives = Country.create(name: "Maldives", population: 523787)
 brunei = Country.create(name: "Brunei", population: 449002)
 
 puts "✅ Done seeding!"
+
+Attraction.create(name: "Babur Tomb", image_url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/08/96/fb/shah-jahan-mosque.jpg?w=1200&h=-1&s=1", description: "The Garden of Babur is a historic park in Kabul, Afghanistan, and also has the tomb of the first Mughal emperor Babur. The garden is thought to have been developed around 1528, when Babur gave orders for the construction of an avenue garden in Kabul, described in some detail in his memoirs, the Baburnama.", country_id: afghanistan.id)
+
+Food.create(name: "Kabuli Palau", image_url: "https://afghancooks.com/wp-content/uploads/2021/09/IMG_0858_jpg.jpg", description: "Kabuli Palau (Also known as Quaboli Palaw, Qabili Palau or Palao, Palaw, Pilau or Pilaf, and Qabili/Kabuli Palau) is a popular meal in Afghanistan. It is a mixed rice dish containing flavorful lamb or chicken chunks, carrot strips, raisins, and eastern spices. It is traditionally topped with chopped almonds or pistachios.", country_id: afghanistan.id)

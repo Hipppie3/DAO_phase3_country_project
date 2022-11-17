@@ -14,8 +14,9 @@ ActiveRecord::Schema.define(version: 2022_11_15_175325) do
 
   create_table "attractions", force: :cascade do |t|
     t.string "name"
-    t.string "location"
+    t.string "image_url"
     t.string "description"
+    t.string "country_id"
   end
 
   create_table "countries", force: :cascade do |t|
@@ -27,6 +28,7 @@ ActiveRecord::Schema.define(version: 2022_11_15_175325) do
     t.string "name"
     t.string "image_url"
     t.string "description"
+    t.string "country_id"
   end
 
 end

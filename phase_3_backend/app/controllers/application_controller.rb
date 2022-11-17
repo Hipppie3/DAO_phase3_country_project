@@ -7,12 +7,13 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/country" do
-    country = Country.all
+    country = Country.all.order(:name)
     country.to_json
   end
 
   get '/country/:id' do
     country = Country.find(params[:id])
-    country.to_json
+    country.to_json(include:[:attractions, :foods])
+
   end
 end
