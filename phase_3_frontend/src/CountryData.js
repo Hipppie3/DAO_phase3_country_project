@@ -5,8 +5,10 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import FoodForm from "./FoodForm";
+import AttractionForm from "./AttractionForm";
 
-function CountryData({ countries }) {
+function CountryData() {
   const [countryDetails, setCountryDetails] = useState();
 
   const { id } = useParams();
@@ -19,27 +21,22 @@ function CountryData({ countries }) {
       });
   }, []);
 
+  useEffect(() => {
+    fetch(`http://localhost:9292/attraction/${id}`, {
+      method: "DELETE",
+    });
+  });
+
   console.log("***countryDetails", countryDetails);
 
-  //   const myStyle = {
-  //     backgroundImage: `url(${flag})`,
-  //     backgroundPosition: "center",
-  //     backgroundRepeat: "no-repeat",
-  //     backgroundSize: "cover",
-  //     backgroundAttachment: "fixed",
-  //     backgroundColor: "#000000",
-  //     height: "1000px",
-  //     margin: "0 auto",
-  //   };
-
-  let attractions = []
+  let attractions = [];
 
   if (countryDetails && countryDetails.attractions) {
     attractions = countryDetails.attractions.map((attraction) => {
-      const {description, image_url, name } = attraction
+      const { description, image_url, name } = attraction;
       return (
         <div className="card">
-          <Card className="card" sx={{ maxWidth: 345 }}>
+          <Card className="card" sx={{ width: 350 }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -48,28 +45,37 @@ function CountryData({ countries }) {
                 alt=""
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" style={{color:"black"}} component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  style={{ color: "black", height: "25px" }}
+                  component="div"
+                >
                   {name}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  style={{ height: "150px" }}
+                >
                   {description}
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         </div>
-      )
-    })
+      );
+    });
   }
 
-  let foods = []
+  let foods = [];
 
   if (countryDetails && countryDetails.foods) {
     foods = countryDetails.foods.map((food) => {
-      const {description, image_url, name } = food
+      const { description, image_url, name } = food;
       return (
         <div className="card">
-          <Card className="card" sx={{ maxWidth: 345 }}>
+          <Card className="card" sx={{ width: 350 }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -78,40 +84,48 @@ function CountryData({ countries }) {
                 alt=""
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" style={{color:"black"}} component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  style={{ color: "black", height: "25px" }}
+                  component="div"
+                >
                   {name}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  style={{ height: "150px" }}
+                >
                   {description}
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         </div>
-      )
-    })
+      );
+    });
   }
 
   return (
     <>
       {!countryDetails ? (
         <h2>Loading...</h2>
-        ) : (
-        <div>
-          <h3 className="card, cardOne">
+      ) : (
+        <div className="cardDiv">
+          <h2 className="countryName">
+            <strong>{countryDetails.name}</strong>
+          </h2>
+          <h3 className="card">
             <u>National Dishes</u>
           </h3>
-          <div className="card, cardOne">
-            {foods}
-          </div>
-        <div>
+          <FoodForm className="foodForm" />
+          <div className="card">{foods}</div>
           <h3 className="card">
             <u>Attractions</u>
           </h3>
-          <div className="card">
-            {attractions}
-          </div>
-        </div>
+          <AttractionForm className="attractionForm" />
+          <div className="card">{attractions}</div>
         </div>
       )}
     </>

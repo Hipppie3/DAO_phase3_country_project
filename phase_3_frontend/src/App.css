@@ -15,6 +15,7 @@
 
 .map {
   min-width: 47vw;
+  margin-right: 100px;
 }
 
 .background {
@@ -22,7 +23,8 @@
   background-image: url("http://wallpaperset.com/w/full/1/4/9/489887.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1020px;
+  min-height: 1013px;
+  max-height: 100%;
 }
 
 .countryList {
@@ -48,25 +50,16 @@
   text-align: center;
 }
 
-.cardOne {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 40px;
-}
-
 .list {
   /* border: 2px solid; */
   background: rgba(0,0,0,0.5);
-  height: 33vw;
-  margin-left: 200px;
-  margin-top: 75px;
+  height: 34vw;
+  margin-left: 150px;
+  margin-top: 125px;
   justify-content: center;
   text-align: center;
   align-items: center;
+  border-radius: 100px;
 }
 
 .listOne {
@@ -86,13 +79,17 @@
   justify-content: center;
 }
 
+.countryName {
+  text-align: center;
+  justify-content: center;
+}
+
 .navBar {
   background-color: black;
+  border-radius: 3px;
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .navBar ul {
@@ -120,4 +117,10 @@
 .logo {
   height: 60px;
   width: 60px;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  color: black;
 }

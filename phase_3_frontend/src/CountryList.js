@@ -8,8 +8,8 @@ function CountryList({ countries }) {
   return (
     <div className="list">
       <h1 className="countriesLabel">Countries:</h1>
-      <h4 className="listOne">{countryComponents.slice(0, 23)}</h4>
-      <h4 className="listOne">{countryComponents.slice(24, 47)}</h4>
+      <h4 className="listOne">{countryComponents.slice(0, 25)}</h4>
+      <h4 className="listOne">{countryComponents.slice(26, 50)}</h4>
     </div>
   );
 }
