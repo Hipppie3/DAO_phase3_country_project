@@ -5,6 +5,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import FoodForm from './FoodForm'
+import AttractionForm from './AttractionForm'
 
 function CountryData({ countries }) {
   const [countryDetails, setCountryDetails] = useState();
@@ -101,6 +103,7 @@ function CountryData({ countries }) {
           <h3 className="card, cardOne">
             <u>National Dishes</u>
           </h3>
+          <FoodForm className="foodForm"/>
           <div className="card, cardOne">
             {foods}
           </div>
@@ -108,6 +111,7 @@ function CountryData({ countries }) {
           <h3 className="card">
             <u>Attractions</u>
           </h3>
+          <AttractionForm className="attractionForm"/>
           <div className="card">
             {attractions}
           </div>

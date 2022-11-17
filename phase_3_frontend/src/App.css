@@ -112,3 +112,10 @@
   height: 60px;
   width: 60px;
 }
+
+form{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
