@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -8,7 +8,7 @@ import { CardActionArea } from "@mui/material";
 import FoodForm from "./FoodForm";
 import AttractionForm from "./AttractionForm";
 
-function CountryData() {
+function CountryData({ countries, setCountries }) {
   const [countryDetails, setCountryDetails] = useState();
 
   const { id } = useParams();
@@ -19,15 +19,7 @@ function CountryData() {
       .then((data) => {
         setCountryDetails(data);
       });
-  }, []);
-
-  useEffect(() => {
-    fetch(`http://localhost:9292/attraction/${id}`, {
-      method: "DELETE",
-    });
-  });
-
-  console.log("***countryDetails", countryDetails);
+  }, [id]);
 
   let attractions = [];
 
@@ -48,7 +40,7 @@ function CountryData() {
                 <Typography
                   gutterBottom
                   variant="h5"
-                  style={{ color: "black", height: "25px" }}
+                  style={{ color: "black", height: "25px", fontSize: "20px" }}
                   component="div"
                 >
                   {name}
@@ -56,11 +48,13 @@ function CountryData() {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  style={{ height: "150px" }}
+                  style={{ height: "150px", fontSize: "13px" }}
                 >
                   {description}
                 </Typography>
               </CardContent>
+              <button className="submitButton">Update</button>
+              <button className="submitButton">Delete</button>
             </CardActionArea>
           </Card>
         </div>
@@ -87,7 +81,7 @@ function CountryData() {
                 <Typography
                   gutterBottom
                   variant="h5"
-                  style={{ color: "black", height: "25px" }}
+                  style={{ color: "black", height: "25px", fontSize: "20px" }}
                   component="div"
                 >
                   {name}
@@ -95,11 +89,13 @@ function CountryData() {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  style={{ height: "150px" }}
+                  style={{ height: "150px", fontSize: "13px" }}
                 >
                   {description}
                 </Typography>
               </CardContent>
+              <button className="submitButton">Update</button>
+              <button className="submitButton">Delete</button>
             </CardActionArea>
           </Card>
         </div>
@@ -119,12 +115,20 @@ function CountryData() {
           <h3 className="card">
             <u>National Dishes</u>
           </h3>
-          <FoodForm className="foodForm" />
+          <FoodForm
+            countries={countries}
+            setCountries={setCountries}
+            className="foodForm"
+          />
           <div className="card">{foods}</div>
           <h3 className="card">
             <u>Attractions</u>
           </h3>
-          <AttractionForm className="attractionForm" />
+          <AttractionForm
+            countries={countries}
+            setCountries={setCountries}
+            className="attractionForm"
+          />
           <div className="card">{attractions}</div>
         </div>
       )}

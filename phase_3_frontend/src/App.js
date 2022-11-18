@@ -37,7 +37,9 @@ function App() {
           <Route
             exact
             path="/country/:id"
-            element={<CountryData countries={countries} />}
+            element={
+              <CountryData countries={countries} setCountries={setCountries} />
+            }
           />
         </Routes>
       </div>

@@ -7,6 +7,9 @@ function AttractionForm() {
       <input className="form" type="text" placeholder="Name" />
       <input className="form" type="text" placeholder="Image URL" />
       <input className="form" type="text" placeholder="Description" />
+      <button className="submitButton" type="submit">
+        Submit
+      </button>
     </form>
   );
 }

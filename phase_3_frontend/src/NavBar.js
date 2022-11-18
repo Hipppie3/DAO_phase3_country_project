@@ -3,19 +3,18 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <nav className="navBar">
-      <h1 className="siteTitle">
-        {/* <img
-          className="logo"
-          src="https://media-exp1.licdn.com/dms/image/D5635AQFKEIO7J50lKg/profile-framedphoto-shrink_800_800/0/1667947544509?e=1669233600&v=beta&t=1a8eTl5kmgBiKHqUtbkC8C0DhCreZU_8kQQejrJ6K-o"
-          alt="logo"
-        /> */}
-        Site Title
-      </h1>
+      <img
+        className="logo"
+        src="https://cdn.adventuretravel.biz/wp-content/themes/metro_10_v2/static/images/ATTA-Globe.png"
+        alt="logo"
+        // style={{ height: "40px", width: "40px" }}
+      />
+      <h1 className="siteTitle">DAO w/o CRUD</h1>
       <ul>
         <li>
           <Link to="/">
             <a href="/" className="placeholder">
-              HOME
+              <strong>HOME</strong>
             </a>
           </Link>
         </li>
